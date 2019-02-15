@@ -15,5 +15,5 @@ clean:
 	-rm -r ./node_modules
 	-npm cache verify
 
-deploy: node_modules/
+deploy: 
 	echo "Deploy To Server!"
