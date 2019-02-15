@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Gastly: Tout Video Player Testing</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js">/* DOM4 */</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/1.5.0/document-register-element.js">/* W3C Custom Elements */</script>
+  <script src="https://unpkg.com/hyperhtml@2.5.10/min.js"></script>
+
+  <!-- Custom Elements -->
+  <script src="js/elements/pick-option.js">/*<pick-option title list selected></pick-option>*/</script>
+  <script src="js/elements/link-sdk.js">/*<link-sdk href title sdkHost brandID></link-sdk>*/</script>
+  <script src="js/elements/json-bookmarklet.js">/*<json-bookmarklet json="{}"></json-bookmarklet>*/</script>
+  <script src="js/elements/json-editor.js">/*<json-editor json="{}"></json-editor>*/</script>
+
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="controls">
+    <pick-option id="pickEnv" title="Environment:" change-event="updateEnv"></pick-option>
+    <pick-option id="pickBrandID" title="Brand ID:" change-event="updateBrandID"></pick-option>
+
+    <a href="http://tout-qa.test-automation-artifacts.s3.amazonaws.com/gastly/index.html">on AWS</a>
+    <div class="image-gastly"></div>
+  </div>
+
+
+  <div class="card">
+    <div class="linkboard">
+      <link-sdk href="map.html" title="MAP - Mid Article Product"></link-sdk>
+      <link-sdk href="livechannel.html" title="LC - LiveChannel"></link-sdk>
+      <link-sdk href="singleEmbed.html" title="Single Embed"></link-sdk>
+      <link-sdk href="vdp.html" title="VDP"></link-sdk>
+    </div>
+
+
+    <div class="panel panel--bookmarklet">
+      <div class="panel--main">
+        <h2>Edit JSON to create a custom URLOverride Bookmarklet</h2>
+        <json-bookmarklet id="jsonOverrideBookmarklet" class="bookmarklet" title="Custom URLOverride"></json-bookmarklet>
+        <json-editor id="jsonOverrideEditor" change-event="syncOverrideBookmarklet"></json-editor>
+      </div>
+
+      <div class="panel--alt">
+        <h2>Ad Tag</h2>
+        <json-bookmarklet class="bookmarklet" title="No Ad" json='{"adTagID":53226}'></json-bookmarklet>
+        <json-bookmarklet class="bookmarklet" title="Flash Ad" json='{"adTagID":334067}'></json-bookmarklet>
+        <h2>Autoplay</h2>
+        <json-bookmarklet class="bookmarklet" title="Autoplay, Sound, Pre-roll" json='{"autoplay": true, "adDelayStart": 0, "isMuted": false}'></json-bookmarklet>
+        <json-bookmarklet class="bookmarklet" title="Autoplay, Muted, Pre-roll" json='{"autoplay": true, "adDelayStart": 0, "isMuted": true}'></json-bookmarklet>
+        <json-bookmarklet class="bookmarklet" title="Autoplay, Sound, Mid-roll" json='{"autoplay": true, "adDelayStart": 3, "isMuted": false}'></json-bookmarklet>
+        <json-bookmarklet class="bookmarklet" title="Autoplay, Muted, Mid-roll" json='{"autoplay": true, "adDelayStart": 3, "isMuted": true}'></json-bookmarklet>
+        <h2>Click to play</h1>
+        <json-bookmarklet class="bookmarklet" title="Click to Play, Sound, Mid-roll" json='{"autoplay": false, "adDelayStart": 3, "isMuted": false}'></json-bookmarklet>
+        <json-bookmarklet class="bookmarklet" title="Click to Play, Sound, Pre-roll" json='{"autoplay": false, "adDelayStart": 0, "isMuted": false}'></json-bookmarklet>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Customer Embed Codes</h2>
+      <div class="linkboard">
+        <link-sdk href="embedCodes/salon_reactor.html" title="Salon + Reactor"></link-sdk>
+        <link-sdk href="embedCodes/map_simple.html" title="v2: Simple"></link-sdk>
+        <link-sdk href="embedCodes/single_script.html" title="Single Script Tag"></link-sdk>
+        <link-sdk href="embedCodes/terminus.html" title="Terminus Embed (terminus.dev)"></link-sdk>
+        <link-sdk href="embedCodes/mapAsyncFetch.html" title="Map Async"></link-sdk>
+        <link-sdk href="all.html" title="All Products on one page"></link-sdk>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Custom Test pages</h2>
+      <div class="linkboard">
+        <link-sdk href="vdp_terminus.html?tout_uid=55xm6o" title="VDP - Video Destination Page"></link-sdk>
+        <link-sdk href="demos/factinate.html" title="Factinate"></link-sdk>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS -->
+  <script src="js/ENVS.js"></script>
+  <script src="js/findIP.js"></script>
+  <script src="js/store.js"></script>
+
+
+  <!-- Start it! -->
+  <script src="js/index.js"></script>
+</body>
+</html>
