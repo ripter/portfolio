@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/ripter/portfolio/issues"
   },
-  "homepage": "https://github.com/ripter/portfolio#readme"
+  "homepage": "https://github.com/ripter/portfolio#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }

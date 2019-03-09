@@ -4,7 +4,7 @@ NODE_BIN=./node_modules/.bin
 all: server
 
 server: node_modules/
-	PORT=5051 node server/index.js
+	$(NODE_BIN)/http-server
 
 node_modules/: package.json
 	npm install
@@ -15,5 +15,5 @@ clean:
 	-rm -r ./node_modules
 	-npm cache verify
 
-deploy: 
+deploy:
 	echo "Deploy To Server!"
