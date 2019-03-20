@@ -5,57 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Parallax Component</title>
   <link rel="stylesheet" type="text/css" href="css/parallax.css" />
+  <style>
+    body {
+      display: flex;
+      place-content: center;
+    }
+  </style>
 </head>
 <body>
 
   <div class="parallax demo">
-    <div class="parallax-group team team--red">
-      <div class="background"></div>
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo 10x10 1 - 3_20_19.png')"></div>
       <div class="content">
-        <h1>Team Red 🚩</h1>
+        <h1>10x10</h1>
         <p>
-          This is clearly the best team and you would be stupid to vote for anyone else. Vote Team Red 🚩 or else.
+          Clear rows and columns to score points. Bonus points if the row or column is all of the same type.
         </p>
-        <ul>
-          <li> Red is the best.</li>
-          <li> Res always wins.</li>
-          <li> You are not a loser.</li>
-          <li> Vote for Team Red 🚩</li>
-        </ul>
+        <p>
+          Comming soon to iOS!
+        </p>
+        <!-- <img src="img/promo 10x10 1 - 3_20_19.png" /> -->
       </div>
-      <div class="preview">
-        <img src="https://images.freeimages.com/images/large-previews/b98/red-display-1196668.jpg" />
+      <div class="preview tall--right">
+        <img src="img/promo 10x10 2 - 3_20_19.png" />
       </div>
     </div>
 
-    <div class="parallax-group team team--blue">
-      <div class="background"></div>
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo rotate 3 3_20_19.png');"></div>
       <div class="content">
-        <h1>Team Blue 🔷</h1>
+        <h1>Rotate to Win!</h1>
         <p>
-          Stay level and calm with the blue team. Come join us with a vote and a smooth jazz solo.
+          Rotate the world and move the cube.
         </p>
+        <p>
+          WASD Keys to rotate the "camera"
+          <br />
+          Press "i" to invert the colors.
+        </p>
+        <h2><a href="https://codepen.io/ripter/full/WPeWWK">Play on CodePen</a></h2>
       </div>
-      <div class="preview">
-        <img src="https://images.freeimages.com/images/large-previews/b8b/blue-note-1523317.jpg" />
+      <div class="preview wide">
+        <img src="img/promo rotate 2 3_20_19.png" />
       </div>
     </div>
-    <div class="parallax-group team team--green">
-      <div class="background"></div>
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo vr 1 3_20_19.png');"></div>
       <div class="content">
-        <h1>Team Green 🍀</h1>
+        <h1>VR Vortex Riders</h1>
         <p>
-          Everything grows and changes. We understand your feelings and can support you. Pick Team Green 🍀 and we can grow together.
+          Inspired by my programming heros John Carmack and Tim Sweeney. I recreated parts of the first Unreal Level (Vortex Rikers) in VR (Oculus Go).
         </p>
-        <ul>
-          <li> Life is about change.</li>
-          <li> Conflict leads to reward.</li>
-          <li> The team you pick is the right team for you.</li>
-          <li> Pick Team Green 🍀</li>
-        </ul>
+        <h2><a href="https://codepen.io/ripter/full/wOzGZr">Play on CodePen</a></h2>
       </div>
-      <div class="preview">
-        <img src="https://images.freeimages.com/images/large-previews/114/green-red-apple-1326049.jpg" />
+      <div class="preview wide">
+        <img src="img/promo vr 2 3_20_19.png" />
       </div>
     </div>
   </div>

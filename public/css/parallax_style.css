@@ -1,0 +1,31 @@
+/*
+ * Transform the group in 3D space so they can scroll and different speeds.
+ */
+.parallax-group .background {
+  filter: blur(10px);
+  background-size: cover;
+  transform: translateX(0vw) translateY(0vh) translateZ(0vh) scale(1);
+}
+.parallax-group .content {
+  transform: translateX(10vw) translateY(0vh) translateZ(10vh) scale(0.8);
+}
+.parallax-group .preview {
+  transform: translateX(0vw) translateY(0vh) translateZ(50vh) scale(0.5);
+}
+.parallax-group .preview img {
+  max-height: 90vh;
+  max-width: 90vw;
+}
+
+
+
+.parallax-group .preview.tall--right {
+  transform: translateX(30vw) translateY(3vh) translateZ(50vh) scale(0.5);
+}
+.parallax-group .preview.wide {
+  transform: translateX(0vw) translateY(8vh) translateZ(50vh) scale(0.4);
+}
+
+.parallax-group .content {
+  color: #fff;
+}
