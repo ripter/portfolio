@@ -1,14 +1,33 @@
-/*
- * Transform the group in 3D space so they can scroll and different speeds.
- */
 .parallax-group .background {
   filter: blur(10px);
   background-size: cover;
   transform: translateX(0vw) translateY(0vh) translateZ(0vh) scale(1);
 }
+
+
 .parallax-group .content {
   transform: translateX(10vw) translateY(0vh) translateZ(10vh) scale(0.8);
 }
+.parallax-group .content.tall--left {
+  width: 32em;
+  height: 15em;
+  transform: translateX(10vw) translateY(10vh) translateZ(10vh) scale(0.8);
+  color: #fff;
+  background-color: #000a;
+  padding: 1em;
+  border-radius: 5%;
+}
+.parallax-group .content h2 {
+  padding-top: 1em;
+}
+.parallax-group .content a {
+  background-color: #fffa;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+
 .parallax-group .preview {
   transform: translateX(0vw) translateY(0vh) translateZ(50vh) scale(0.5);
 }
