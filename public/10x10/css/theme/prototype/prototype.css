@@ -1,0 +1,22 @@
+.theme-prototype {
+
+}
+
+.theme-prototype grid-2d .color-red {
+  background-color: #FF4136;
+}
+.theme-prototype grid-2d .color-blue {
+  background-color: #0074D9;
+}
+.theme-prototype grid-2d .color-green {
+  background-color: #2ECC40;
+}
+.theme-prototype grid-2d .color-orange {
+  background-color: #FF851B;
+}
+.theme-prototype grid-2d .color-purple {
+  background-color: #B10DC9;
+}
+.theme-prototype grid-2d .color-yellow {
+  background-color: #FFDC00;
+}

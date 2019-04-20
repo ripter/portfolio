@@ -1,0 +1,30 @@
+
+.header-score {
+  font-family: monospace;
+  font-variant: small-caps;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-score > * {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.header-score h2 {
+  font-size: .75em;
+  line-height: .75em;
+}
+
+.header-score span {
+  font-size: 1.25em;
+  font-weight: bold;
+
+  /* STYLE BLOCK */
+  color: #FF4136;
+  /* END STYLE BLOCK */
+}

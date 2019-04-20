@@ -1,0 +1,24 @@
+.theme-rose {
+
+}
+
+.theme-rose grid-2d .color-red {
+  /* background-color: #85144b; */
+  background-image: url(svg/rose_block.svg);
+  background-size: contain;
+}
+.theme-rose grid-2d .color-blue {
+  background-color: #001f3f;
+}
+.theme-rose grid-2d .color-green {
+  background-color: #01FF70;
+}
+.theme-rose grid-2d .color-orange {
+  background-color: #F012BE;
+}
+.theme-rose grid-2d .color-purple {
+  background-color: #B10DC9;
+}
+.theme-rose grid-2d .color-yellow {
+  background-color: #FFDC00;
+}

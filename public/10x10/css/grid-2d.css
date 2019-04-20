@@ -1,0 +1,13 @@
+grid-2d {
+  display: grid;
+  grid-gap: 1px;
+}
+
+grid-2d > div {
+  height: 1em;
+  width: 1em;
+}
+
+.show-gameover grid-2d.grid--empty {
+  display: none;
+}

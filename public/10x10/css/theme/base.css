@@ -1,0 +1,53 @@
+@import "../fontawesome/css/all.css";
+
+:root {
+  --primary-background-color: #001f3f;
+  --primary-color: white;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+}
+
+aside {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  padding: 0.5em 0;
+}
+
+button {
+  font-size: 24px;
+}
+
+h1, h2, select {
+  color: var(--primary-color);
+}
+
+
+aside button {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  /* Make sure the icon is centered in the button's border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary {
+  font-size: 0.75em;
+}
+.btn-primary {
+  font-size: 1.5em;
+  padding: .25em .5em;
+  background-color: var(--primary-color);
+  color: var(--primary-background-color);
+}
+
+
+#btn-play-again > i {
+  padding-left: 0.15em;
+}

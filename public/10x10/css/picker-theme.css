@@ -1,0 +1,14 @@
+picker-theme {
+  display: none;
+}
+
+.show-theme-picker picker-theme {
+  display: flex;
+}
+
+picker-theme {
+}
+
+picker-theme > select {
+  font-size: 1.3em;
+}

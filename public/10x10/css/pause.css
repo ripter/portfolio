@@ -1,0 +1,11 @@
+.pause {
+  display: none;
+}
+
+.show-pause .pause {
+  display: block;
+}
+
+.pause {
+  /* background-color: red; */
+}

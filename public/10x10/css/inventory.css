@@ -1,0 +1,18 @@
+.inventory {
+  display: none;
+}
+.show-playing .inventory,
+.show-gameover .inventory {
+  display: flex;
+}
+
+.show-gameover .inventory {
+  float: right;
+  width: 70%;
+}
+
+
+.inventory {
+  justify-content: space-around;
+  align-items: flex-start;
+}

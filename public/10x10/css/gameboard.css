@@ -1,0 +1,14 @@
+.gameboard {
+  display: flex;
+  justify-content: space-around;
+  margin: .25em 0;
+}
+
+.gameboard grid-2d {
+  background-color: #111;
+  padding: 1px;
+}
+
+.gameboard grid-2d > div {
+  background-color: #fff;
+}

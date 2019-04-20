@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+    https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+    <title>10x10 Game</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <div id="game" class="">
+      <!-- <span class="bonus-score"></span> -->
+      <aside class="header-score">
+        <h1>Score: <span id="score"></span></h1>
+        <h2>Highscore: <span id="highscore"></span></h2>
+      </aside>
+
+      <div class="gameboard">
+        <grid-2d class="droppable"></grid-2d>
+      </div>
+
+      <div class="inventory">
+        <grid-2d class="draggable"></grid-2d>
+        <grid-2d class="draggable"></grid-2d>
+        <grid-2d class="draggable"></grid-2d>
+      </div>
+
+      <aside class="gameover">
+        <!-- <div class="banner">
+          <span>Gameover</span>
+        </div> -->
+
+        <div class="banner">
+          <div class="line">
+            <span>Game Over</span>
+          </div>
+          <div class="line">
+            <span>Best Streak:</span>
+          </div>
+          <div class="line bonus">
+            <span></span>
+          </div>
+        </div>
+
+        <button action="main" id="btn-play-again" class="btn-secondary" type="button">
+          <i class="fas fa-angle-left"></i>
+        </button>
+      </aside>
+
+      <aside class="scene-main">
+        <button action="pause-open" id="btn-open-pause" class="btn-secondary" type="button">
+          <i class="fas fa-eye-dropper"></i>
+        </button>
+        <button action="replay" id="btn-play-again" class="btn-primary" type="button">
+          <i class="fas fa-play"></i>
+        </button>
+      </aside>
+
+      <aside class="pause">
+        <button action="pause-close" id="btn-close-pause" class="btn-secondary" type="button">
+          <i class="fas fa-save"></i>
+        </button>
+        <picker-emoji></picker-emoji>
+      </aside>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

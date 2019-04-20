@@ -1,0 +1,19 @@
+picker-emoji input {
+  width: 3em;
+}
+
+picker-emoji ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+picker-emoji li input {
+  /* display: none; */
+}
+
+picker-emoji button {
+  margin: 1em 2em;
+}

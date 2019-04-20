@@ -1,0 +1,14 @@
+.gameover {
+  display: none;
+}
+
+.show-gameover .gameover {
+  display: flex;
+}
+
+.gameover {
+  justify-content: space-around;
+  align-items: center;
+  float: left;
+  width: 25%;
+}

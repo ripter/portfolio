@@ -1,0 +1,12 @@
+.scene-main {
+  display: none;
+}
+
+.show-main .scene-main {
+  display: flex;
+}
+
+.scene-main {
+  justify-content: space-around;
+  align-items: center;
+}

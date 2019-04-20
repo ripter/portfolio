@@ -1,0 +1,23 @@
+.theme-emoji {
+
+}
+
+.theme-emoji grid-2d > div {
+  display: block;
+  line-height: 1.15em;
+  text-align: center;
+}
+
+.theme-emoji .gameboard grid-2d > div {
+  color: black;
+}
+
+.theme-emoji .inventory grid-2d.isDragging > div {
+  color: black;
+}
+
+
+.theme-emoji .animate-clear::before {
+  /* background-color: red; */
+  display: block;
+}
