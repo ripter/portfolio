@@ -3,33 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Chris Richards</title>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js">/* DOM4 */</script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/1.5.0/document-register-element.js">/* W3C Custom Elements */</script>
-  <script src="https://unpkg.com/hyperhtml@2.5.10/min.js"></script>
+  <title>Parallax Component</title>
+  <link rel="stylesheet" type="text/css" href="css/parallax.css" />
+  <style>
+    body {
+      display: flex;
+      place-content: center;
+      background-image: linear-gradient(#555555, #111111);
+    }
+  </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>A-Frame and VR</h1>
-    <p class="codepen" data-height="512" data-theme-id="0" data-default-tab="result" data-user="ripter" data-slug-hash="wOzGZr" data-preview="true" style="height: 512px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Vortex Rikers Homage">
-      <span>See the Pen <a href="https://codepen.io/ripter/pen/wOzGZr/">
-      Vortex Rikers Homage</a> by Chris (<a href="https://codepen.io/ripter">@ripter</a>)
-      on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  </section>
 
-
-  <section class="hero">
-    <h1>3D with CSS</h1>
-    <div class="embed_codepen">
-      <p class="codepen" data-height="556" data-theme-id="0" data-default-tab="result" data-user="ripter" data-slug-hash="WPeWWK" data-preview="true" style="height: 556px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Rotate To Win">
-        <span>See the Pen <a href="https://codepen.io/ripter/pen/WPeWWK/">
-        Rotate To Win</a> by Chris (<a href="https://codepen.io/ripter">@ripter</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  <div class="parallax demo">
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo 10x10 1 - 3_20_19.png')"></div>
+      <div class="content tall--left">
+        <h1>10x10</h1>
+        <p>
+          Clear rows and columns to score points. Bonus points if the row or column is all of the same type.
+        </p>
+        <p>
+          Desktop and Mobile!
+        </p>
+        <h2><a href="/10x10/index.html">Play Beta Now!</a></h2>
+      </div>
+      <div class="preview tall--right">
+        <img src="img/promo 10x10 2 - 3_20_19.png" />
+      </div>
     </div>
-  </section>
+
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo rotate 3 3_20_19.png');"></div>
+      <div class="content">
+        <h1>Rotate to Win!</h1>
+        <p>
+          Rotate the world and move the cube.
+        </p>
+        <p>
+          WASD Keys to rotate the "camera"
+          <br />
+          Press "i" to invert the colors.
+        </p>
+        <h2><a href="https://codepen.io/ripter/full/WPeWWK">Play on CodePen</a></h2>
+      </div>
+      <div class="preview wide">
+        <img src="img/promo rotate 2 3_20_19.png" />
+      </div>
+    </div>
+    <div class="parallax-group">
+      <div class="background" style="background-image: url('img/promo vr 1 3_20_19.png');"></div>
+      <div class="content">
+        <h1>VR Vortex Riders</h1>
+        <p>
+          Inspired by my programming heros John Carmack and Tim Sweeney. I recreated parts of the first Unreal Level (Vortex Rikers) in VR (Oculus Go).
+        </p>
+        <h2><a href="https://codepen.io/ripter/full/wOzGZr">Play on CodePen</a></h2>
+      </div>
+      <div class="preview wide">
+        <img src="img/promo vr 2 3_20_19.png" />
+      </div>
+    </div>
+  </div>
+
+
+
 </body>
 </html>
