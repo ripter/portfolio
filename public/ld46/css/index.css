@@ -8,9 +8,11 @@
 body {
   background-color: var(--color-background);
   display: flex;
+  flex-direction: column;
 }
 
 
 #elCanvas {
   width: 80%;
+  /* height: 70%; */
 }
